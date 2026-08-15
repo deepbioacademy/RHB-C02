@@ -99,3 +99,14 @@ data |>
   summarise(mean_age = mean(Age), sd_age = sd(Age))
 
 
+# Summary 
+# 1. select 
+# 2. filter 
+# 3. mutate 
+# 4. rename 
+# 5. group_by
+# 6. summarise 
+
+
+
+
