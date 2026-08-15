@@ -137,13 +137,29 @@ df1 <- data.frame(
 )
 
 df2 <- data.frame(
-  ID = c(1, 2, 3, 5),
+  ID2 = c(1, 2, 3, 5),
   Age = c(20, 25, 30, 35)
 )
 
 # left_join() keeps all observations from the first data frame.
+# if column name is the same 
 df1 |> 
   left_join(df2, by = "ID")
+
+# if column name is not same
+df1 <- data.frame(
+  IDx = c(1, 2, 3, 4),
+  Name = c("A", "B", "C", "D")
+)
+
+df2 <- data.frame(
+  ID2 = c(1, 2, 3, 5),
+  Age = c(20, 25, 30, 35)
+)
+
+df1 |> 
+  left_join(df2, by = c("IDx" = "ID2"))
+
 
 # ID 1 → matched
 # ID 2 → matched
