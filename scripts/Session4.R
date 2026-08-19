@@ -106,7 +106,3 @@ data |>
 # 4. rename 
 # 5. group_by
 # 6. summarise 
-
-
-
-

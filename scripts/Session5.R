@@ -166,3 +166,11 @@ df1 |>
 # ID 3 → matched
 # ID 4 → no match → NA
 # This is probably the most commonly used join in practical data analysis.
+
+# Summary
+# 1. Missing handling 
+# 2. col and row binding 
+# 3. data layout transformation (wide to long, long to wide)
+# 4. left join 
+
+
